@@ -1,0 +1,27 @@
+# Python virtual environment (your venv lives in .env/)
+.env/
+venv/
+env/
+
+# Compiled Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Packaging
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Generated output (charts, csv exports) — produced by the pipeline
+output/
+
+# Local database (rebuildable from data/) — do NOT commit (any nesting level)
+data/**/*.db
+
+# Logs & OS files
+*.log
+.DS_Store
+Thumbs.db
