@@ -1,27 +1,36 @@
-# Python virtual environment (your venv lives in .env/)
+# ===== Python 虚拟环境（本项目 venv 在 .env/ 目录）=====
 .env/
 venv/
 env/
 
-# Compiled Python
+# ===== 编译缓存 =====
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 
-# Packaging
+# ===== 打包产物 =====
 *.egg-info/
 .eggs/
 build/
 dist/
 
-# Generated output (charts, csv exports) — produced by the pipeline
+# ===== 本地数据与产出（体积大 / 可重建，一律不入库）=====
+data/
 output/
+*.db
+*.sqlite
+*.sqlite3
 
-# Local database (rebuildable from data/) — do NOT commit (any nesting level)
-data/**/*.db
+# ===== 本地密钥（当前未使用，为下一步 Token 外置预留）=====
+/.env
+*.env
+!.env.example
 
-# Logs & OS files
+# ===== 编辑器 / AI 助手本地元数据 =====
+.codebuddy/
+.vscode/
+.idea/
+
+# ===== 日志与系统文件 =====
 *.log
 .DS_Store
 Thumbs.db
