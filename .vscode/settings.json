@@ -1,3 +1,0 @@
-{
-    "python.defaultInterpreterPath": "${workspaceFolder}\\.env\\Scripts\\python.exe"
-}
